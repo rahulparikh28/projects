@@ -1,0 +1,39 @@
+#include<p32xxxx.h>
+#include<plib.h>
+void delay()
+int main()
+{
+	unsigned int t0,t1;
+	mPORTASetPinsDigitalOut(BIT_0|BIT_1|BIT_2|BIT_3|BIT_4|BIT_5|BIT_6|BIT_7);
+	DDPCON=0x0000;
+	RTCCONCLR=0x80000;
+	while(RTCCON&0x40)
+	RTCTIME=0x12243000;
+	RTCDATE=13022603;
+	RTCCONSET=0x80000;
+	while(!(RTCCON&0x40)
+	
+	t0=RTCTIME;
+	t1=RTCTIME;
+while(1)
+{
+	if(t0=t1)
+	{
+		mPORTASetBits(BIT_0);
+		
+	}
+	else
+	{
+		mPORTASetBits(BIT_1);
+		delay(1000)
+		mPORTAClearBits(BIT_1);
+	}
+}	
+
+void delay(unsigned int itime)
+{
+	for(i=1,i<itime,i++)
+	{
+		for(j=1,j<1250,j++)
+	}
+}	
