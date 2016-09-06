@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  stack_implementation.cpp
+c:\users\rahul\documents\visual studio 2015\projects\stack_implementation\stack_implementation\stack_implementation.cpp(16): warning C4101: 'node3': unreferenced local variable
+  stack_implementation.vcxproj -> C:\Users\Rahul\Documents\Visual Studio 2015\Projects\stack_implementation\Debug\stack_implementation.exe
